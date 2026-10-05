@@ -5,7 +5,122 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ABES Engineering College - Class Time Table</title>
 
+<style>
+    * { box-sizing: border-box; }
 
+    
+
+    .page {
+        width: 100%;
+        border: 1px solid #999;
+        padding: 3px;
+        background: #fff;
+    }
+
+    .top-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+        text-align: center;
+        min-height: 48px;
+    }
+
+    .college-name {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 21px;
+        grid-column: 2;
+        white-space: nowrap;
+    }
+
+    .timetable-title {
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 20px;
+    }
+
+    .form-number {
+        text-align: right;
+        font-size: 14px;
+        font-weight: bold;
+        padding-right: 8px;
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        align-items: start;
+        column-gap: 8px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 18px;
+    }
+
+    .details-left { text-align: left; }
+    .details-center { text-align: center; }
+    .details-right { text-align: right; }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        font-size: 14px;
+    }
+
+    th, td {
+        border: 1px solid #000;
+        text-align: center;
+        vertical-align: middle;
+        padding: 3px 2px;
+        font-weight: normal;
+    }
+
+    thead th { height: 28px; font-weight: normal; }
+    .day-time { width: 8%; font-weight: normal; }
+    .period { font-size: 14px; height: 26px; }
+    .time { font-size: 13px; white-space: nowrap; height: 28px; }
+    .day { font-size: 14px; width: 8%; }
+
+    .class-cell {
+        height: 90px;
+        font-size: 14px;
+        line-height: 17px;
+        overflow-wrap: normal;
+    }
+
+    .class-code { font-weight: normal; }
+    .class-room { white-space: nowrap; }
+    .lunch { font-weight: bold; font-size: 14px; letter-spacing: 1px; }
+    .blank { background: #fff; }
+    .group-cell { padding: 0; line-height: 15px; }
+
+    .group {
+        padding: 2px 1px;
+        min-height: 43px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .group + .group { border-top: 1px solid #000; }
+    .lab-cell { height: 90px; }
+    .mentor { line-height: 17px; }
+    .room-line { display: block; }
+
+    @page { size: A4 landscape; margin: 5mm; }
+
+    @media print {
+        body { padding: 0; margin: 0; }
+        .page { width: 100%; border: 1px solid #999; }
+        table { font-size: 13px; }
+        .class-cell { font-size: 13px; }
+    }
+</style>
 </head>
 
 <body>
