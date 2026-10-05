@@ -1,12 +1,229 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First GitHub Project</title>
+    <title>Course Curriculum</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 18px;
+            color: #000;
+            margin: 28px;
+            line-height: 1.15;
+        }
+
+        /* Main title */
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            line-height: 1.1;
+            margin: 18px 0 26px;
+        }
+
+        /* Session details */
+        .session {
+            text-align: center;
+            font-size: 19px;
+            margin-bottom: 18px;
+        }
+
+        /* LINE DIRECTLY ABOVE INTRODUCTION */
+        header {
+            border-bottom: 2px solid #c9c9c9;
+            padding-bottom: 0;
+            margin-bottom: 22px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 22px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+        ol, ul {
+            padding-left: 48px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        li {
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        dl {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-left: 50px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        /* Elective subjects: bullets with numbered sublists */
+        .electives {
+            list-style-type: disc;
+        }
+
+        .electives ol {
+            list-style-type: decimal;
+            margin-bottom: 10px;
+        }
+
+        /* Lab curriculum: numbers with circle bullets */
+        .labs ul {
+            list-style-type: circle;
+            margin-bottom: 4px;
+        }
+
+        footer {
+            border-top: 2px solid #c9c9c9;
+            text-align: center;
+            font-size: 18px;
+            padding-top: 16px;
+            margin-top: 26px;
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 12mm;
+            }
+
+            body {
+                margin: 0;
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<h1>Hello GitHub!</h1>
-    <p>This is my first HTML project uploaded using Git.</p>
+
+    <header>
+        <h1>
+            B.Tech Computer Science - Course<br>
+            Curriculum
+        </h1>
+
+        <p class="session">
+            <strong>Session:</strong> 2025-2029
+            &copy; ABES Engineering College Ghaziabad
+        </p>
+    </header>
+
+    <main>
+
+        <h2>Introduction</h2>
+
+        <p>
+            The <strong>Bachelor of Technology in Computer Science</strong>
+            is designed to provide students with
+            <em>strong foundations</em> in computer science,
+            software engineering, and
+            <u>emerging technologies</u>.
+        </p>
+
+        <h2>Semester 1 Subjects (Ordered List)</h2>
+
+        <ol>
+            <li>Mathematics-I</li>
+            <li>Physics</li>
+            <li>Basic Electrical Engineering</li>
+            <li>Programming in C</li>
+            <li>Engineering Drawing</li>
+            <li>Web Designing Workshop-1</li>
+            <li>Essential of AI</li>
+        </ol>
+
+        <h2>Programming Languages Covered (Unordered List)</h2>
+
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h2>Key Terms (Description List)</h2>
+
+        <dl>
+            <dt>AI</dt>
+            <dd>- Artificial Intelligence, the study of intelligent machines.</dd>
+
+            <dt>DBMS</dt>
+            <dd>- Database Management System, software to handle databases.</dd>
+
+            <dt>OS</dt>
+            <dd>- Operating System, software managing hardware resources.</dd>
+        </dl>
+
+        <h2>Elective Subjects (Nested List)</h2>
+
+        <ul class="electives">
+            <li>Artificial Intelligence
+                <ol>
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                </ol>
+            </li>
+
+            <li>Data Science
+                <ol>
+                    <li>Statistics</li>
+                    <li>Data Visualization</li>
+                </ol>
+            </li>
+        </ul>
+
+        <h2>Lab Curriculum (Mixed List)</h2>
+
+        <ol class="labs">
+            <li>Programming Labs
+                <ul>
+                    <li>C Lab</li>
+                    <li>Python Lab</li>
+                </ul>
+            </li>
+
+            <li>Electronics Labs
+                <ul>
+                    <li>Digital Electronics Lab</li>
+                    <li>Microprocessor Lab</li>
+                </ul>
+            </li>
+        </ol>
+
+    </main>
+
+    <footer>
+        &copy; 2025 Curriculum Design &reg; ABESEC AUTONOMOUS INSTITUTE
+    </footer>
+
 </body>
 </html>
