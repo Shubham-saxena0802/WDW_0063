@@ -4,132 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Room Booking Form</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f5f9;
-            margin: 0;
-            padding: 30px 15px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #17365d;
-        }
-
-        .booking-form {
-            max-width: 550px;
-            margin: 25px auto;
-            padding: 25px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-        }
-
-        label {
-            display: block;
-            margin-top: 14px;
-            margin-bottom: 6px;
-            font-weight: bold;
-            color: #333333;
-        }
-
-        input, select, textarea {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 10px;
-            border: 1px solid #c7ced8;
-            border-radius: 5px;
-            font-size: 15px;
-        }
-
-        textarea {
-            resize: vertical;
-        }
-
-        .buttons {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        button {
-            flex: 1;
-            padding: 11px;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 15px;
-            cursor: pointer;
-        }
-
-        .submit-btn {
-            background-color: #176b45;
-        }
-
-        .reset-btn {
-            background-color: #596579;
-        }
-
-        button:hover {
-            opacity: 0.88;
-        }
-
-        .note {
-            text-align: center;
-            color: #555;
-            font-size: 13px;
-            margin-top: 18px;
-        }
-    </style>
 </head>
 
 <body>
 
-    <h1>Hotel Room Booking Form</h1>
+    <h1 align="center">Hotel Room Booking Form</h1>
 
-    <form class="booking-form" action="#" method="post">
+    <form action="#" method="post">
 
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname"
-               placeholder="Enter your full name" required>
+        <fieldset>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"
-               placeholder="Enter your email address" required>
+            <legend><strong>Booking Details</strong></legend>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone"
-               placeholder="Enter your phone number" required>
+            <label for="fullname">Full Name:</label>
+            <br>
 
-        <label for="checkin">Check-in Date:</label>
-        <input type="date" id="checkin" name="checkin" required>
+            <input type="text" id="fullname" name="fullname"
+                   placeholder="Enter your full name" required>
 
-        <label for="checkout">Check-out Date:</label>
-        <input type="date" id="checkout" name="checkout" required>
+            <br><br>
 
-        <label for="room">Room Type:</label>
-        <select id="room" name="room" required>
-            <option value="">-- Select Room Type --</option>
-            <option value="single">Single Room</option>
-            <option value="double">Double Room</option>
-            <option value="deluxe">Deluxe Room</option>
-            <option value="suite">Suite</option>
-        </select>
+            <label for="email">Email:</label>
+            <br>
 
-        <label for="guests">Number of Guests:</label>
-        <input type="number" id="guests" name="guests"
-               min="1" max="10" value="1" required>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email address" required>
 
-        <label for="requests">Special Requests:</label>
-        <textarea id="requests" name="requests" rows="4"
-                  placeholder="Enter any special requests (optional)"></textarea>
+            <br><br>
 
-        <div class="buttons">
-            <button type="submit" class="submit-btn">Book Now</button>
-            <button type="reset" class="reset-btn">Reset Form</button>
-        </div>
+            <label for="phone">Phone Number:</label>
+            <br>
+
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter your phone number" required>
+
+            <br><br>
+
+            <label for="checkin">Check-in Date:</label>
+            <br>
+
+            <input type="date" id="checkin" name="checkin" required>
+
+            <br><br>
+
+            <label for="checkout">Check-out Date:</label>
+            <br>
+
+            <input type="date" id="checkout" name="checkout" required>
+
+            <br><br>
+
+            <label for="room">Room Type:</label>
+            <br>
+
+            <select id="room" name="room" required>
+
+                <option value="">-- Select Room Type --</option>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Suite</option>
+
+            </select>
+
+            <br><br>
+
+            <label for="guests">Number of Guests:</label>
+            <br>
+
+            <input type="number" id="guests" name="guests"
+                   min="1" max="10" value="1" required>
+
+            <br><br>
+
+            <label for="requests">Special Requests:</label>
+            <br>
+
+            <textarea id="requests" name="requests" rows="4" cols="40"
+                      placeholder="Enter any special requests (optional)"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Book Now">
+
+            <input type="reset" value="Reset Form">
+
+        </fieldset>
 
     </form>
 
