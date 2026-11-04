@@ -1,290 +1,160 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Referrer setting to help fix YouTube Error 153 -->
-    <meta name="referrer"
-          content="strict-origin-when-cross-origin">
-
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Global Daily News</title>
-
 </head>
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f1f1f1;
-            color: #222;
-        }
 
-       header {
-            background-color: #b30000;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        nav {
-            background-color: #222;
-            text-align: center;
-            padding: 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 12px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: yellow;
-        }
-
-        .container {
-            display: flex;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        main {
-            flex: 3;
-            background-color: white;
-            padding: 20px;
-        }
-
-        aside {
-            flex: 1;
-            background-color: white;
-            padding: 20px;
-        }
-
-        h2 {
-            color: #b30000;
-            border-bottom: 2px solid #b30000;
-            padding-bottom: 8px;
-        }
-
-        .news {
-            padding: 15px 0;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .news h3 {
-            margin-bottom: 8px;
-        }
-
-        .date {
-            color: #666;
-            font-size: 13px;
-        }
-
-        a {
-            color: #b30000;
-        }
-
-        nav a {
-            color: white;
-        }
-
-        .video {
-            margin-top: 25px;
-        }
-
-        iframe {
-            width: 100%;
-            max-width: 560px;
-            height: 315px;
-            border: none;
-        }
-
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer a {
-            color: white;
-        }
-
-        @media (max-width: 700px) {
-            .container {
-                flex-direction: column;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 8px;
-            }
-
-            iframe {
-                height: 230px;
-            }
-        }
-    </style>
 <body>
 
-    <!-- Website Header -->
     <header id="home">
-        <h1>GLOBAL DAILY NEWS</h1>
-        <p>Your Trusted Source for Latest Updates</p>
-        <p>News Website | HTML Experiment 2</p>
+        <h1 align="center">GLOBAL DAILY NEWS</h1>
+        <p align="center">Your Trusted Source for Latest Updates</p>
+        <p align="center">News Website | HTML Experiment 2</p>
+        <hr>
     </header>
 
-    <!-- Navigation Menu -->
     <nav>
-        <a href="#home">Home</a>
-        <a href="#india">India</a>
-        <a href="#sports">Sports</a>
-        <a href="#technology">Technology</a>
-        <a href="#video">Video</a>
-        <a href="#podcast">Podcast</a>
-        <a href="#contact">Contact</a>
+        <p align="center">
+            <a href="#home">Home</a> |
+            <a href="#india">India</a> |
+            <a href="#sports">Sports</a> |
+            <a href="#technology">Technology</a> |
+            <a href="#video">Video</a> |
+            <a href="#podcast">Podcast</a> |
+            <a href="#contact">Contact</a>
+        </p>
     </nav>
 
-    <div class="container">
+    <hr>
 
-        <!-- Main News Content -->
-        <main>
+    <main>
 
-            <h2>Latest News Headlines</h2>
+        <h2>Latest News Headlines</h2>
 
-            <!-- India News -->
-            <section class="news" id="india">
-                <h3>1. Bullet Train Project Update</h3>
+        <section id="india">
+            <h3>1. Bullet Train Project Update</h3>
 
-                <p class="date">India News</p>
+            <p><strong>India News</strong></p>
 
-                <p>
-                    India's Mumbai-Ahmedabad high-speed rail project
-                    is an important infrastructure initiative aimed
-                    at improving connectivity between the two cities.
-                    The project includes bridges, tunnels and modern
-                    railway stations.
-                </p>
+            <p>
+                India's Mumbai-Ahmedabad high-speed rail project
+                is an important infrastructure initiative aimed
+                at improving connectivity between the two cities.
+                The project includes bridges, tunnels and modern
+                railway stations.
+            </p>
 
-                <a href="https://www.nhsrcl.in/"
-                   target="_blank">
-                    Read More - Official Bullet Train Project
-                </a>
-            </section>
+            <a href="https://www.nhsrcl.in/" target="_blank">
+                Read More - Official Bullet Train Project
+            </a>
 
-            <!-- National News -->
-            <section class="news">
-                <h3>2. Industrial Safety and Workplace News</h3>
+            <hr>
+        </section>
 
-                <p class="date">National News</p>
+        <section>
+            <h3>2. Industrial Safety and Workplace News</h3>
 
-                <p>
-                    Industrial safety remains an important issue
-                    for factories and manufacturing facilities.
-                    Safety inspections, equipment maintenance and
-                    emergency preparedness help protect workers.
-                </p>
+            <p><strong>National News</strong></p>
 
-                <a href="https://indianexpress.com/section/india/"
-                   target="_blank">
-                    Read Latest India News
-                </a>
-            </section>
+            <p>
+                Industrial safety remains an important issue
+                for factories and manufacturing facilities.
+                Safety inspections, equipment maintenance and
+                emergency preparedness help protect workers.
+            </p>
 
-            <!-- Sports News -->
-            <section class="news" id="sports">
-                <h3>3. Indian Sports Updates</h3>
+            <a href="https://indianexpress.com/section/india/"
+               target="_blank">
+                Read Latest India News
+            </a>
 
-                <p class="date">Sports</p>
+            <hr>
+        </section>
 
-                <p>
-                    Follow Indian athletes and teams across cricket,
-                    tennis, wrestling, badminton and other sporting
-                    events. Stay updated with match results and
-                    tournament news.
-                </p>
+        <section id="sports">
+            <h3>3. Indian Sports Updates</h3>
 
-                <a href="https://www.espn.in/"
-                   target="_blank">
-                    Read Sports News
-                </a>
-            </section>
+            <p><strong>Sports</strong></p>
 
-            <!-- Technology News -->
-            <section class="news" id="technology">
-                <h3>4. Technology and Innovation</h3>
+            <p>
+                Follow Indian athletes and teams across cricket,
+                tennis, wrestling, badminton and other sporting
+                events. Stay updated with match results and
+                tournament news.
+            </p>
 
-                <p class="date">Technology</p>
+            <a href="https://www.espn.in/" target="_blank">
+                Read Sports News
+            </a>
 
-                <p>
-                    Discover developments in artificial intelligence,
-                    computers, electronics, space research and
-                    digital technology.
-                </p>
+            <hr>
+        </section>
 
-                <a href="https://www.technologyreview.com/"
-                   target="_blank">
-                    Read Technology News
-                </a>
-            </section>
+        <section id="technology">
+            <h3>4. Technology and Innovation</h3>
 
-            <!-- YouTube Video Section -->
-            <section class="video" id="video">
+            <p><strong>Technology</strong></p>
 
-                <h2>Watch Latest News</h2>
+            <p>
+                Discover developments in artificial intelligence,
+                computers, electronics, space research and
+                digital technology.
+            </p>
 
-                <p>
-                    Watch the video below for news and updates.
-                </p>
+            <a href="https://www.technologyreview.com/"
+               target="_blank">
+                Read Technology News
+            </a>
 
-                <iframe
-                    src="https://www.youtube.com/embed/Io-G_aiF8HA"
-                    title="Latest News Video"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allow="accelerometer; autoplay; clipboard-write;
-                    encrypted-media; gyroscope; picture-in-picture;
-                    web-share"
-                    allowfullscreen>
-                </iframe>
+            <hr>
+        </section>
 
-                <p>
-                    If the video does not play, watch it directly on
-                    <a href="https://youtu.be/Io-G_aiF8HA"
-                       target="_blank">
-                        YouTube
-                    </a>.
-                </p>
+        <section id="video">
 
-            </section>
+            <h2>Watch Latest News</h2>
 
-            <!-- Podcast Section -->
-            <section id="podcast">
+            <p>Watch the video below for news and updates.</p>
 
-                <h2>News Podcast</h2>
+            <iframe
+                src="https://www.youtube.com/embed/Io-G_aiF8HA"
+                title="Latest News Video"
+                width="560"
+                height="315"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
 
-                <p>
-                    Listen to news summaries and discussions about
-                    important events in India and around the world.
-                </p>
+            <p>
+                If the video does not play, watch it directly on
+                <a href="https://youtu.be/Io-G_aiF8HA"
+                   target="_blank">YouTube</a>.
+            </p>
 
-                <a href="https://www.bbc.com/audio"
-                   target="_blank">
-                    Listen to News Podcasts
-                </a>
+        </section>
 
-            </section>
+        <hr>
 
-        </main>
+        <section id="podcast">
 
-        <!-- Sidebar -->
+            <h2>News Podcast</h2>
+
+            <p>
+                Listen to news summaries and discussions about
+                important events in India and around the world.
+            </p>
+
+            <a href="https://www.bbc.com/audio" target="_blank">
+                Listen to News Podcasts
+            </a>
+
+        </section>
+
+        <hr>
+
         <aside>
 
             <h2>Quick Links</h2>
@@ -302,23 +172,17 @@
             <ul>
                 <li>
                     <a href="https://indianexpress.com/"
-                       target="_blank">
-                        The Indian Express
-                    </a>
+                       target="_blank">The Indian Express</a>
                 </li>
 
                 <li>
                     <a href="https://www.bbc.com/news"
-                       target="_blank">
-                        BBC News
-                    </a>
+                       target="_blank">BBC News</a>
                 </li>
 
                 <li>
                     <a href="https://www.ndtv.com/"
-                       target="_blank">
-                        NDTV
-                    </a>
+                       target="_blank">NDTV</a>
                 </li>
             </ul>
 
@@ -332,22 +196,24 @@
 
         </aside>
 
-    </div>
+    </main>
 
-    <!-- Footer -->
     <footer id="contact">
 
-        <h3>Contact Us</h3>
+        <hr>
 
-        <p>
+        <h3 align="center">Contact Us</h3>
+
+        <p align="center">
             Email:
             <a href="mailto:info@globalnews.com">
                 info@globalnews.com
             </a>
         </p>
 
-        <p>&copy; 2026 Global Daily News</p>
-        <p>Created for HTML Experiment 2</p>
+        <p align="center">&copy; 2026 Global Daily News</p>
+
+        <p align="center">Created for HTML Experiment 2</p>
 
     </footer>
 
