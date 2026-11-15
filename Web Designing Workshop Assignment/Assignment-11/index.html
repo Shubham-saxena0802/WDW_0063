@@ -1,39 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Accessible Web Page</title>
+    <title>Accessible Page</title>
 </head>
 <body>
+    <a href="#main">Skip to main content</a>
 
-    <a href="#main">Skip to Main Content</a>
-
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-
-    <nav aria-label="Main Navigation">
-        <a href="#">Home</a> |
-        <a href="#">About</a> |
-        <a href="#">Contact</a>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Help</a>
     </nav>
 
     <main id="main">
+        <h1>Accessible Page</h1>
 
-        <h2>About Us</h2>
+        <img src="image.jpg" alt="College image">
 
-        <p>Welcome to our accessible website.</p>
+        <button aria-label="Close">X</button>
 
-        <img src="college.jpg"
-             alt="College campus building"
-             width="200">
-
-        <p>This website is designed for everyone.</p>
-
+        <label for="search">Search:</label>
+        <input type="search" id="search">
     </main>
-
-    <footer>
-        <p>Copyright 2026 My Website</p>
-    </footer>
-
 </body>
 </html>
